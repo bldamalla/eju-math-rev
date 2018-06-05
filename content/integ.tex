@@ -1,0 +1,72 @@
+\paragraph{Euclidean division}
+In the case of natural numbers, a natural number can be expressed as a product of any two natural numbers and a remainder.
+Examples are shown below:
+\begin{align*}
+    35 &= 5(7) + 0 \\
+    123 &= 6(20) + 3
+\end{align*}
+
+\subsection{Divisors and Multiples}
+\paragraph{Divisors}
+A divisor of $n \in \mathbb{N}$ is a number $k \in \mathbb{N}$ such that $\frac{n}{k} \in \mathbb{N}$, i.e. the quotient between the dividend and divisor is a natural number.
+Divisors can also be called the \emph{factors} of a natural number.
+
+\subparagraph{Proper divisors}
+A proper divisor of a number is a divisor that is \emph{not equal} to the number.
+
+\subparagraph{Greatest Common Factor/Divisor}
+The greatest common factor or divisor (GCD) of a set of natural numbers is the greatest natural number, not necessarily an element of the set, that divides all of the numbers in the set.
+Formally:
+\[
+GCD(S \subset \mathbb{N}) = x \in \mathbb{N}\ s.t.\ x \mid a\ \forall\ a \in S
+\]
+
+\paragraph{Multiples}
+A multiple of $n \in \mathbb{N}$ is a number $M \in \mathbb{N}$ such that $\exists\ k \in \mathbb{N} : M = kn$ i.e. there exists a natural number $k$ where $M$ is a product of $k$ and $n$.
+
+\subparagraph{Least Common Multiple}
+The least common multiple (LCM) of a set of natural numbers is the least natural number, not necessarily an element of the set, such that every element in the set divides the number.
+Formally:
+\[
+LCM(S \subset \mathbb{N}) = x \in \mathbb{N}\ s.t.\ a \mid x\ \forall\ a \in S
+\]
+
+These definitions imply that:
+\begin{enumerate}
+    \item A natural number $n$ is a divisor \emph{and} a multiple but \emph{not} a proper divisor of itself.
+    \item If $k \mid n$ then $k$ is a divisor of $n$ and $n$ is a divisor of $k$.
+\end{enumerate}
+
+\subsection{Euclidean Algorithm}
+The Euclidean algorithm is a fast \emph{recursive} method to calculate the GCF of a two numbers.
+Reduction algorithms can be applied to a list of numbers based on the algorithm.
+The algorithm assumes that the GCF of two numbers is the same as the GCF of one of the numbers and the difference of the numbers.
+Formally, with $x > y$:
+\[
+GCD(x, y) = GCD(x-y, y) = GCD(x-y, x)
+\]
+
+\subsection{Applications of the properties of integers}
+\paragraph{Fundamental theorem of arithmetic}
+The theorem states that natural numbers other than $1$ are either \emph{prime numbers} or can be uniquely represented as \emph{products} of prime numbers.
+
+\paragraph{Number of divisors of a number}
+From the fundamental theorem of arithmetic and counting techniques (see section \ref{stat}), it is possible to determine the number of factors of an integer.
+As examples:
+
+\begin{align*}
+100 &= 2^2 \cdot 5^2 \\
+45 &= 3^2 \cdot 5^1
+\end{align*}
+
+The first number ($100$) has $(2+1)(2+1) = 9$ factors.
+The second number ($45$) has $(2+1)(1+1) = 6$ factors.
+
+\paragraph{Number of ``trailing zeros" in a factorial}
+In finding the number of trailing zeros in a factorial $m$, it is necessary to find the largest power of $10$ that can divide the factorial expression.
+Since $10 = 2\cdot 5$ we find $min(f(2),\ f(5))$ where $f(n\in P)$ gives the exponent of the prime number $n$ in the prime factorization of the factorial.
+The value of $f(n)$ can be obtained from continuous division of $n$ from the operand $m$.
+
+\paragraph{Modulo Congruence}
+
+\paragraph{Chinese Remainder Theorem}

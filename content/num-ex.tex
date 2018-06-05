@@ -1,0 +1,218 @@
+\subsection{Numbers and Sets}
+\subsubsection{Logic}
+Mathematical logic is an important part in analysis.
+Presented as follows are some relevant concepts. 
+
+\begin{table}[h!]
+    \centering
+    \caption{Common logic terms and definitions}
+    
+    \begin{tabular}{c|c|c}
+        conjunction & $p \land q$ & $p$ and $q$ \\
+        disjunction & $p \lor q$ & $p$ or $q$ \\
+        statement & $p \Longrightarrow q$ & ``$p$ implies $q$" \\
+        converse & $q \longrightarrow p$ & ``$q$ implies $p$" \\
+        equivalence & $p \iff q$ & ``$p$ if and only if $q$"
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{``Tautologies in propositional calculus"}
+    \begin{tabular}{c|c}
+        $p \lor \neg p$ & ``Law of excluded middle" \\
+        $\neg (p \land \neg p)$ & ``Law of contradiction" \\
+        $\neg (\neg p) \iff p$ & ``Negation of negation" \\
+        $p \Longrightarrow q \iff (\neg p \lor q)$ & ``Sufficiency" \\
+        $q \Longrightarrow p \iff (\neg q \lor p)$ & ``Necessity" \\
+        $\neg (p \land q) \iff \neg p \lor \neg q$ & De Morgan's Law \\
+        $\neg (p \lor q) \iff \neg p \land \neg q$ & De Morgan's Law \\
+        $(p \Longrightarrow q) \iff (\neg q \Longrightarrow \neg p)$ & ``Law of contraposition / the contrapositive" \\
+        $[(p \Longrightarrow q) \land (q \Longrightarrow r)] \Longrightarrow (p \Longrightarrow r)$ & ``Law of Transitivity" \\
+        $p \land (p \Longrightarrow q) \Longrightarrow q$ & ``\textit{Modus ponens} or Law of detachment" \\
+        $q \land (\neg p \Longrightarrow \neg q) \Longrightarrow p$ & ``Indirect proof" \\
+        $(p_1 \lor p_2) \land (p_1 \Longrightarrow q) \land (p_2 \Longrightarrow q) \Longrightarrow q$ & ``Distinction of cases"
+    \end{tabular}
+\end{table}
+
+Table 2 is explained below:
+\begin{enumerate}
+    \item Either a statement or its negation is true.
+    \item A statement and its negation cannot be true at the same time.
+    \item The negation of the negation of the statement is the statement.
+    \item {\bfseries Sufficiency}. A premise is \emph{sufficient} for a conclusion iff the conclusion is true whenever the premise holds.
+    \item {\bfseries Necessity}. A conclusion is \emph{necessary} for a premise iff the premise is true whenever the conclusion holds.
+    \item If the conjunction of two statements is false, then at least one of them is false.
+    \item If the disjunction of two statements is false, then both of them are false.
+    \item A premise is sufficient for a conclusion if and only if the negation of the conclusion is sufficient to show that the premise is false.
+    \item Logic is transitive.
+    \item If a statement is true and it is sufficient for a conclusion then the conclusion holds.
+    \item If a conclusion holds and it is necessary for a premise then the premise holds.
+    \item If at least one premise (case) that is sufficient for a conclusion holds, then it is necessary to conclude.
+\end{enumerate}
+
+\subsubsection{Sets}
+\paragraph{Sets}
+Sets, in general, are collections of well-defined objects, or even sets!
+Sets can have \emph{any whole number} of elements, called cardinality.
+A set with only one element is called a \emph{singleton}, such as $\{\varnothing\}$.
+A set with no elements is called an \emph{empty set or null set}, $\varnothing$.
+
+The elements of sets should be unique and well defined. Sets can be defined in different ways:
+\begin{enumerate}
+    \item ``Let $S$ be the set of even integers"
+    \item $S = \{0, 1, 2, 3\}$---Roster notation
+    \item $S = \{x : x \neq 1\}$---Set-builder notation
+\end{enumerate}
+
+\paragraph{Subsets}
+There are also collections within collections---subsets---denoted as $M \subset N$.
+Here, we have a subset $M$ contained within $N$.
+This follows that all elements of $M$ can be found in $N$.
+
+\paragraph{Set operations}
+Common sets operations include \emph{set intersection}, $\cap$, and \emph{set union}, $\cup$.
+The intersection between two well defined sets is the collection of elements present in \emph{both} sets.
+The union of two well-defined sets is the collection of elements that can be found in \emph{either} set.
+Other set operations include the set difference $\setminus$ and the set complement $'$. The set difference $M \setminus N = \{x | x \in M \land x \notin N\}$. The complement $M' = \Omega \setminus M$, where $\Omega$ is a universal set.
+
+\subsubsection{Real Numbers}
+In beginning algebra, most of the operations apply to the real number system $\mathbb{R}$.
+This number system is then divided into two sets---the set of rational numbers $\mathbb{Q}$ and the set of irrational numbers $\mathbb{Q}'$.
+
+\paragraph{Rational Numbers}
+Rational numbers are numbers that can be expressed as $\frac{p}{q}$ where $p, q$ are integral.
+This means that these numbers \emph{can be expressed as fractions}.
+Examples of rational numbers are $\frac{1}{3}$, $\frac{134}{235}$, and $\frac{3}{1}$.
+The set of irrational numbers is the complement of $\mathbb{Q}$ in $\mathbb{R}$.
+These numbers, hence, \emph{cannot be expressed as fractions}.
+Examples of irrational numbers are $e$, $\pi$, $\sqrt{2}$.
+
+\paragraph{Integers}
+$\mathbb{Q}$ is subdivided into the set of integers $\mathbb{Z}$ and the set of non-integers.
+Subsets of $\mathbb{Z}$ the set of whole numbers, $\mathbb{W} = \{0, 1, 2, 3, \ldots\}$, and the set of natural numbers $\mathbb{N} = \{1, 2, 3, \ldots\}$.
+
+More subsets can be defined, by parity, such as the even number set and the odd number sets within $\mathbb{N}$. There is also a special subset or natural numbers called the set of prime numbers. This set will be described in some detail in a later section.
+
+\subsubsection{Propositions}
+Properties of subsets:
+\begin{enumerate}
+    \item Reflexivity -- ``A set is a subset of itself"
+    \item Transitivity -- ``$M \subset N \land N \subset P \Longrightarrow M \subset P$"
+    \item $\varnothing \subset M\ \forall\ M$
+\end{enumerate}
+
+These properties imply that:
+\begin{enumerate}
+    \item The number of subsets of any set $M$ is $2^{N(M)}$, where $N(M)$ is the cardinality of $M$.
+    \item The number of proper subsets of $M$ is $2^{N(M)}-1$
+\end{enumerate}
+
+\paragraph{De Morgan's Law}
+The law applies to the set operations $', \cap, \cup$.
+The propositions are stated as follows:
+
+\begin{enumerate}
+    \item $(M \cup N)' = M' \cap N'$
+    \item $(M \cap N)' = M' \cup N'$
+\end{enumerate}
+
+\paragraph{Cartesian Product}
+The Cartesian Product of two sets $X$ and $Y$, $X \times Y = \{(x, y) | x \in X \land y \in Y\}$. This means that $\mathbb{R}^2$ is the two-dimensional Cartesian plane, $\mathbb{R}^3$ is the three-dimensional Cartesian plane, and so on.
+
+\subsection{Calculation of Expressions}
+Expressions, in mathematics, are segments of statements.
+These expressions often involve operations on quantities.
+Examples are as follows:
+
+\begin{enumerate}
+    \item $1 + 1$---Constant expression
+    \item $x$---Monomial
+    \item $(3x - 2)^2$---Polynomial
+    \item $\frac{3x+2}{4x+3}$---Rational expression
+    \item $(x+y)^4$---Expression in multiple variables
+\end{enumerate}
+
+\subsubsection{Expansion and Factorization of Expressions}
+
+\paragraph{FOIL method} For multiplication of binomials, $(3x+2)\cdot(4x+3)$, the FOIL method for expansion provides an equivalent of the expression $(3x+2)(4x+3) = 12x^2+17x+6$. 
+The FOIL method is an application of the \emph{distributive} property of multiplication over addition; however this is limited to multiplying binomials.
+
+\paragraph{Rainbow method} For multiplying more complex polynomials, the rainbow method is a generalized version of the FOIL method. $(x^2+2x+1)(x+1) = x^3 + 2x^2 + x^2 + 2x + x + 1 = x^3 + 3x^2 + 3x + 1$. Again, this is also derived from the distributive property of multiplication over addition.
+
+\paragraph{Regrouping} For factoring expressions, $a^2 + 2ab + b^2$, regrouping terms with common factors is reasonable so that common terms will be factored out: $a^2 + ab + b^2 + ab = a(a+b) + b(a+b) = (a+b)^2$.
+This is also a consequence of the distributive property.
+In order to properly factor expressions, there must be ways to redistribute the terms.
+
+\paragraph{Commonly used expressions}
+Some of the commonly used expressions are listed below:
+
+\begin{enumerate}
+    \item Square of a binomial: $(x+a)^2 = x^2+a^2+2ax$
+    \item Square of a trinomial: $(x+a+b)^2 = x^2+a^2+b^2+2ax+2bx+2ab$
+    \item Difference of two squares: $x^2 - a^2 = (x-a)(x+a)$
+    \item Difference of two cubes: $x^3 - a^3 = (x-a)(x^2+ax+a^2)$
+    \item Sum of two cubes: $x^3+a^3 = (x+a)(x^2-ax+a^2)$
+    \item Difference of powers of five: $x^5-a^5 = (x-a)(x^4+ax^3+a^2x^2+a^3x+a^4)$
+    \item Sum of powers of five: $x^5+a^5 = (x+a)(x^4-ax^3+a^2x^2-a^3x+a^4)$
+\end{enumerate}
+
+\subsubsection{Linear inequalities}
+There are two kinds of inequalities: \emph{strict} and \emph{non-strict} inequalities.
+Strict inequalities are statements of non-equality providing no solutions for equality.
+Non-strict inequalities, on the other hand, provide solutions for equality.
+
+Examples of inequalities are the following.
+Also, note that the statements are complements ($-ve$s) of each other.
+
+\begin{enumerate}
+    \item $x+3 \leq 4$---Non-strict inequality
+    \item $x+3 > 4$---Strict inequality
+\end{enumerate}
+
+Solving linear inequalities is similar to solving linear equations.
+
+\subsubsection{Equations and inequalities with $\abs{x}$}
+\paragraph{Absolute value function $\abs{x}$}
+This function gives the distance of the value of the expression from $0$.
+Since it returns a distance, it should be \emph{non-negative}.
+Formally the absolute value is defined as:
+\[
+\abs{x} = 
+\begin{cases}
+x & x \geq 0 \\
+-x & x < 0
+\end{cases}
+\]
+Examples are shown below:
+\begin{enumerate}
+    \item $\abs{3} = 3$
+    \item $\abs{-10} = 10$
+\end{enumerate}
+
+\emph{There are two cases for the value of a real-valued expression: it is non-negative or negative}. Thus, both cases must be considered.
+
+\paragraph{Equations with $\abs{x}$}
+Since the absolute value of a number is its distance from $0$ in the real number system, there are two solutions to equations of absolute values of linear equations.
+If $\abs{x+a} = 10 \iff x+a=10 \lor x+a=-10$.
+
+\paragraph{Inequalities with $\abs{x}$}
+Inequalities containing absolute values are slightly different from equations.
+Since absolute values are non-negative, then the inequality $\abs{13-x} < 0$ would not make sense. 
+What makes absolute value inequalities different is the set of cases used for solving.
+
+Shown are the four cases and their logical equivalents:
+\begin{enumerate}
+    \item $\abs{x+3} \leq 4 \iff -4 \leq x+3 \leq 4$
+    \item $\abs{x+3} < 4 \iff -4 < x+3 < 4$
+    \item $\abs{x+3} \geq 4 \iff (-4 \geq x+3) \lor (4 \leq x+3)$
+    \item $\abs{x+3} > 4 \iff (-4 > x+3) \lor (4 < x+3)$
+\end{enumerate}
+
+\paragraph{Triangle inequality (Algebraic)}
+This is a famous inequality involving absolute values.
+This will be restated in a later section (see section \ref{figs}).
+
+\[
+\abs{x+y} \leq \abs{x} + \abs{y}
+\]

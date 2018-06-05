@@ -1,0 +1,170 @@
+\subsection{Quadratic Functions and Their Graphs}
+\paragraph{Relations and Functions}
+A relation is a mapping between two well-defined sets $M$ and $N$.
+Operating on real-valued sets, every relation $S \subset \mathbb{R}^2$ and can be graphed in a two-dimensional Cartesian plane.
+There are different kinds of relations depending on the number of associations of elements of each set in another.
+Of such relations there are only some that are considered functions.
+Functions are operations on expressions that map values to another set of values.
+Hence, if a value or expression in the \textbf{domain} is mapped to multiple elements in a certain \textbf{codomain} set the relation is not a function.
+
+\subparagraph{Vertical and Horizontal line test}
+The vertical line test is a method to determine whether a relation is a function.
+The validity of this test arises from the definition of a function.
+The horizontal line test is a method to determine whether a function is injective or non-injective.
+
+The four kinds of relations are as follows:
+
+\subparagraph{One-to-one relations/injective}
+In this kind of relation, an element in set $N$ is associated with \emph{at most one} element in $M$.
+Given $M = {3, 5, 6}$ and $N = {6, 10, 12}$.
+A one-to-one relation for the given sets is given as ``the elements of $N$ are twice the elements of $M$".
+Equivalently, this can be expressed as $N = {2x | \forall x \in M}$.
+Another one-to-one relation for the given sets is the relation which defines the set $S = {(3, 12), (5, 10), (6, 6)}$.
+This relation is a function since there is exactly one element mapped to each element in $M$ in $N$.
+This function is injective since at most one element in $M$ is mapped to every element in $N$.
+
+\subparagraph{One-to-many relations}
+In this kind of relation, an element in set $M$ is associated to more than one element in $N$.
+Given $M = {3, 5, 6}$ and $N = {6, 10, 12}$.
+A subset of the relation is $S = {(3, 10), (3, 12), (5, 6), (5, 10)}$.
+As shown $3$ and $5$ from $M$ pair are mapped with at least one element in $N$.
+This relation cannot be a function since there are more than one values that are mapped to an element in the domain to the codomain.
+
+\subparagraph{Many-to-one relations}
+In this kind of relation, more than one element in set $M$, domain, may be associated to \emph{exactly one} element in $N$, codomain.
+Given $M = {3, 5, 6}$ and $N = {6, 10, 12}$,
+A relation between $M$ and $N$ of this kind is $S = {(3, 6), (5, 6), (6, 10)}$.
+As shown there can be more than one mapped element to the codomain from the domain.
+This relation is a function since there is only one element from $N$ that is mapped to every element in $M$.
+
+\subparagraph{Many-to-many relations}
+In this kind of relation, more than one element in $M$ may be associated to an element in $N$ and vice versa.
+This cannot be a function, by definition.
+
+\paragraph{Quadratic expressions and functions}
+Quadratic expressions are \emph{polynomial expressions of degree $2$}.
+Examples of quadratic expressions are $x^2$ and $x^2+6x+9$.
+Quadratic functions are operations on a domain, $\mathbb{R}$ that is defined with mapping with quadratic relations.
+An example is $f(x) = x^2; f(3) = 9$
+
+\subsubsection{Variation in values of quadratic functions}
+% I don't get this honestly
+Quadratic functions vary with respect to the square and of the value of the operand.
+Hence the variation varies linearly with respect to the operand---via getting the derivative (see section \ref{diffcalc}) of the function.
+Values of quadratic functions either increase then decrease or decrease then increase.
+Geometrically, the \emph{locus} (set of points) defining the relation is a \emph{vertical parabola}.
+This then means that quadratic functions have maximum and minimum values.
+
+\subsubsection{Maximum and minimum values of quadratic functions}
+A quadratic function, being parabolic, is either concave up or concave down.
+Depending on its orientation, a parabola can have either a minimum value or a maximum value.
+If the function is led with a negative coefficient, then it is concave down.
+Otherwise, it is concave up.
+
+It can be shown by the derivative that \emph{concave down quadratic functions have local maxima} and \emph{concave up quadratic functions have local minima}.
+Not surprisingly, since the concavity is a constant function of the operand---via the second derivative test (see section \ref{diffcalc})---\emph{local extrema are also absolute extrema}.
+
+For a given quadratic function $f(x) = ax^2+bx+c$, by the first derivative test (see section \ref{diffcalc}), the local extremum can be found at $x = \frac{-b}{2a}$.
+The value of the extremum, by substitution is $y = \frac{4ac-b^2}{4a^2}$.
+
+\subsubsection{Determining quadratic functions}
+\paragraph{Connect the dots}
+Since functions are operations on some real number $x$ it would be possible to determine functions from points that define it.
+As a general rule, to determine a polynomial function of degree $n$ at least $n+1$ points would be needed.
+Since quadratic functions are degree $2$ polynomials, there should be about three points.
+Given three points, it would then be possible to construct systems of linear equations in $\mathbb{R}^3$.
+It would be similar to solving the following matrix:
+
+\[
+\begin{bmatrix}
+x_1^2 & x_1 & 1 \\
+x_2^2 & x_2 & 1 \\
+x_3^2 & x_3 & 1
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+a \\
+b \\
+c
+\end{bmatrix}
+=
+\begin{bmatrix}
+f(x_1) \\
+f(x_2) \\
+f(x_3) \\
+\end{bmatrix}
+\]
+
+\subparagraph{Given the roots of the function}
+This is a special case of ``connect the dots".
+A quadratic function has either two real roots or no real roots.
+This applies to the first case.
+The function can be determined from roots $x_1 and x_2$ as $f(x) = (x-x_1)(x-x_2)$
+
+\subparagraph{Given the y-intercept and vertex}
+This is another special case of ``connect the dots".
+Here $c$ would be the value of the y-intercept, $h = \frac{-b}{2a}$, and finally $k = \frac{4ac-b^2}{4a^2}$.
+
+\paragraph{Given vertex $(h, k)$ and latus rectum length $4p$}
+From the standard form of a vertical parabola, $(x-h)^2 = 4p(y-k)$, it would be easy to determine the function through mapping of the given values.
+
+\paragraph{Given the sum and product of roots}
+This also applies if related values can be derived.
+Let the sum and product of roots be $s$ and $p$, respectively.
+The quadratic function, by Vieta's theorem is given by $f(x) = x^2 + sx + p$.
+
+\subsection{Quadratic Equations and Inequalities}
+As a note, \emph{equations and inequalities are not functions; they are statements}.
+Functions are \emph{operations} on given operands.
+Examples of such statements are:
+\begin{enumerate}
+    \item $x^2 + 3x + 7 = 5$---a quadratic equation in $x$
+    \item $a^4 + 2a^2 + 1 = 0$---a quadratic equation in $a^2$
+    \item $x^2 + 3x + 7 \geq 5$---a quadratic inequality in $x$
+    \item $a^4 + 2a^2 + 1 < 0$---a quadratic inequality in $a^2$
+\end{enumerate}
+
+\subsubsection{Solutions of quadratic equations}
+Recall that polynomials that are \emph{factorable} may be reduced to their factors.
+Polynomials that cannot be factored are classified as \emph{prime} polynomials.
+
+\paragraph{Factoring}
+If the quadratic expressions not prime, the roots (solutions) can be determined from equating the factors to $0$.
+
+\paragraph{Completing the square}
+Perfect squares, similar to absolute values, are non-negative.
+Then statements such as $x^2 = -1$ and do not make sense in the real number system.
+Again, similar to absolute value expressions, cases will be considered in solving statements.
+First, transform the statement into one containing a \emph{perfect square trinomial} in one side.
+In solving $(x-a)^2 = b$, there are two cases $x-a = \pm \sqrt{b}$.
+The solutions follow.
+
+\subparagraph{Quadratic formula}
+As a shortcut to completing the square, the quadratic formula was defined from the process.
+\[
+x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}
+\]
+
+\subsubsection{Quadratic equations and graphs of quadratic functions}
+Quadratic equations are statements with a quadratic expression.
+The quadratic expression can be treated as a function of an unknown, and the ``other-hand-side" as the function value, i.e $f(a) = 3a^2 = 27$.
+In solving the quadratic equation $f(a)-c = 0$, we find the zeros of a quadratic function $g(a) = f(a)-c$.
+The intersections of the graph of $g$ are the roots of the quadratic equation $f(a)-c = 0$.
+
+\subsubsection{Quadratic inequalities and graphs of quadratic functions}
+Quadratic functions, such as $f(x)$, divide $\mathbb{R}^2$ into two regions of inequality.
+Regions above the graphs of quadratic functions are regions $S = \{(x, y) | y > f(x)\ \forall\ x \in R\}$.
+On the other hand, the regions below the functions are regions $T = \{(x, y) | y < f(x)\ \forall\ x \in R\}$.
+
+Similarly from the previous subsection, we can determine the boundaries where the inequality is satisfied and when they are not.
+
+\paragraph{If $g$ is led by a positive coefficient}
+This means that the graph of $g$ is concave up.
+If $g(a) > 0 \iff f(a) > c$ must be satisfied then the solution set is: $$S = \{x | x < x_1 \lor x > x_2\}$$.
+Else if $g(a) < 0 \iff f(a) < c$ must be satisfied then the solution set is: $$S = \{x | x_1 < x < x_2\}$$.
+In both cases $x_1$ and $x_2$ are the zeros of $g(a)$ and the roots of $f(a) - c = 0$.
+
+\paragraph{If $g$ is led by a negative coefficient}
+This means that the graph of $g$ is concave down.
+The whole inequality can be negated for simplicity.
+Note that the \emph{inequality symbol must be flipped as well}.

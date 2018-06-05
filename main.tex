@@ -1,0 +1,51 @@
+\documentclass{mext-rev}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{import}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{EJU Math Reviewer}
+\author{Voltage}
+\date{May 2018}
+
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\newcommand{\natl}{\mathbb{N}}
+\newcommand{\ratl}{\mathbb{Q}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\intg}{\mathbb{Z}}
+
+\newcommand{\degg}{^\circ}
+
+\newcommand{\importref}[1]{\label{#1}\import{content/}{#1.tex}}
+
+\begin{document}
+
+\section*{Introduction}
+The goal of this reviewer is to provide a knowledge foundation for Math Subject Tests.
+This can be used to review for the SAT Math Subject Test, EJU Math Tests, MEXT Government Scholarship Application Math Tests, and may more.
+The first six sections are for Course 1 Mathematics.
+The following ten sections are Advanced Mathematics.
+
+\section{Numbers and Expressions}\importref{num-ex}
+\section{Quadratic Functions}\importref{quad}
+\section{Probability}\importref{stat}
+\section{Properties of Integers}\importref{integ}
+\section{Properties of Figures}\importref{figs}
+\section{Miscellaneous Expressions}\importref{misc}
+\section{Figures and Equations}\label{fig-eq}\lipsum[2]
+\section{Exponential and Logarithmic Functions}\label{expo-log}\lipsum[2]
+\section{Trigonometric Functions}\label{trig}\lipsum[2]
+\section{Sequences of Numbers}\label{seq}\lipsum[2]
+\section{Vectors}\label{vec}\lipsum[2]
+\section{Complex Plane}\label{cmplx}\lipsum[2]
+\section{Curves on a Plane}\label{curves}\lipsum[2]
+\section{Limits}\label{lim}\lipsum[2]
+\section{Differential Calculus}\label{diffcalc}\lipsum[2]
+\section{Integral Calculus}\label{intcalc}\lipsum[2]
+
+\end{document}
