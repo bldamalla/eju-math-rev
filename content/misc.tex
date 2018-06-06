@@ -2,11 +2,102 @@
 
 \subsubsection{Division of polynomials, rational expressions, and binomial theorem identities}
 \paragraph{Euclidean division of polynomials}
+The \emph{Euclidean division}, or simply division, of polynomials is the counterpart of the Euclidean division of integers to polynomials.
+A polynomial $P(x)$ can be expressed as:
+$$P(x) = Q(x)\cdot D(x) + R(x)$$
+where $D(x)$ is the divisor, $Q(x)$ is the \emph{quotient}, and $R(x)$ is the remainder upon division.
+As examples:
+\begin{enumerate}
+  \item $x^2+3x+2 = (x+1)(x+2) + 0$
+  \item $x^2 = (x-1)(x+1) + 1$
+\end{enumerate}
+
+This division of polynomials can be carried out using \emph{long divison} and \emph{synthetic division}.
+Application of these techniques are \textbf{not} covered in this reviewer.
+
+\paragraph{Long Division}
+As the name suggests, this is the method of division that shows all of the parts of the polynomials being divided.
+This is useful for finding shorter techniques for dividing polynomials.
+The technique of synthetic division is derived from the application of long division.
+
+\paragraph{Synthetic Division}
+This division technique is derived from the long division of polynomials.
+This makes use only of the coefficients of the terms of the dividend and the divisor.
+This is normally used when dividing polynomials of a single term to a linear polynomial of the same term, \textit{eg.} $3x^3 - 4x + 5$ divided by $x+2$.
+Extensions to quadratic forms have been made and further generalizations can also be made.
+
+\paragraph{Rational Expressions}
+Rational expressions are expressions involving \emph{ratios} of polynomials.
+There are two kinds of rational expressions---\emph{proper} and \emph{improper} rational expressions.
+A \textbf{proper} rational expression is a ratio between a polynomial of a higher degree, or the same, to another polynomial.
+An \textbf{improper} rational expression is a ratio between a polynomial of a lower degree to another polynomial.
+Examples of rational expressions are:
+
+\begin{enumerate}
+  \item $\frac{x^2+x+1}{x^3+4x+2}$---a proper rational expression
+  \item $\frac{x^3+4x+2}{x^2+x+1}$---an improper rational expression
+\end{enumerate}
+
+Since improper rational expressions is a division operation on two polynomials, it is necessary that they can be expressed in the form $Q(x)\cdot D(x) + R(x)$ by Euclidean division.
+From expression:
+
+\begin{align*}
+  P(x) &= Q(x)\cdot D(x) + R(x) \\
+  \dfrac{P(x)}{D(x)} &= Q(x) + \dfrac{R(x)}{D(x)}
+\end{align*}
+
+Here, the $LHS$ is the \emph{improper} rational expression, $Q(x)$ is the polynomial quotient, and the last term is a \emph{proper} rational fraction, the remainder.
 
 \subsubsection{Proofs of equations and inequalities}
+This subsection will contain important equations and inequalities used for proving.
+Important equations for proving algebraic equalities are shown in section \ref{num-ex}.
+
+\paragraph{QM-AM-GM-HM inequalities}
+This family of inequalities is famous for applications in proving related inequalities.
+This is a relation between the \emph{quadratic mean} (QM), \emph{arithmetic mean} (AM), \emph{geometric mean} (GM), and \emph{harmonic mean} (HM) of \emph{positive real numbers}.
+Equality is achieved when \emph{all} numbers in the set are \emph{equal}
+The relation is given as follows:
+
+\begin{align*}
+  QM &\geq AM &\geq GM &\geq HM \\ \\
+  \sqrt{\dfrac{1}{N}\cdot \sum\limits_{n=1}^{N} a_n^2} &\geq \dfrac{1}{N}\cdot \sum\limits_{n=1}^{N} a_n &\geq \Big(\prod_{n=1}^{N}a_n \Big)^{\frac{1}{N}} &\geq \Big(\dfrac{1}{N}\cdot \sum\limits_{n=1}^{N}\frac{1}{a_n}\Big)^{-1}
+\end{align*}
+
+\subparagraph{Tips}
+Use these inequalities when the expressions appear \emph{cyclic}.
+This means that terms have repeating ``patterns''.
+
+\paragraph{Cauchy-Schwarz Inequality}
+This inequality is also used in proving some related inequalities.
+These state that the product of a sum of squares is grater than or equal to the sum of the square of the sum of the products of the terms.
+Equality holds when $\frac{a_n}{b_n}\ \forall\ n\leq N$.
+Symbollically,
+
+$$
+(a_1^2+a_2^2+a_3^2+\ldots +a_n^2)(b_1^2+b_2^2+b_3^2+\ldots +b_n^2) \geq (a_1b_1+a_2b_2+a_3b_3+\ldots +a_nb_n)^2 
+$$
+
+\subparagraph{Tips}
+Use this inequality when comparing inequalities involving \emph{both squares and their products}.
+Applications may not be obvious.
 
 \subsection{Equations of higher degree}
+Equations of degree $3$ and above do not follow quadratic, and other simple, relations and are most of the time harder to solve.
+Completing the cube (for degree 3 polynomials) and so forth for higher degree polynomialsare very tedious to do.
 
 \subsubsection{Complex numbers and solutions of quadratic equations}
+The set of complex numbers $\cplx$ contains the set of real numbers $\real$ and the set of non-real numbers $\real '$.
+Complex numbers have imaginary components and can be expressed in the form $a + bi$ where $a, b \in \real$ and $i$ is the imaginary unit ($i = \sqrt{-1}$).
+
+As stated in section \ref{quad}, quadratic expressions with $D < 0$ have no real roots but they have \emph{two non-real, complex roots}.
+Given that $\sqrt{-1} = i$, it is then possible to calculate the complex roots of quadratic functions.
+
 \subsubsection{Factor theorem}
+This theorem states that if $P(a) = 0$, then $x-a$ is a factor of $P(x)$ \textit{ie. it leaves a remainder of $0$ upon division}.
+This theorem can be shown as a consequence of Euclidean division.
+
 \subsubsection{Properties of higher degree polynomials and methods of solving them}
+\paragraph{Rational root theorem}
+This theorem states that given a polynomial $P(x) = a_nx^n + a_{n-1}x^n-1 + a_{n-2}x^{n-2} +\ldots +a_0$, the set $S$:
+$$ S = {\dfrac{b_0}{b_n} | b_0\mid a_0; b_n\mid a_n} $$
+contains all possible rational roots of the equation.
