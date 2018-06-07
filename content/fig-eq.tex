@@ -1,0 +1,106 @@
+\subsection{Lines and Circles}
+
+\subsubsection{Coordinates of a Point}
+Considering $cartes$, there are two parts to the coordiantes of a point.
+The first part is the x-coordinate known as the \emph{abscissa} of the point.
+The second part is the y-coordinate known as the \emph{ordinate} of the point.
+Using the abscissa and ordinate of a point, it is possible to plot them onto $cartes$.
+
+\paragraph{The Four Quadrants}
+The Cartesian plane is divided into $4$ regions as quadrants.
+
+\subsubsection{Equations of Lines}
+A \emph{line} is a collection of points that extend in both directions.
+Lines can be represented in $real ^2$ as relations between $x$ and $y$.
+Examples of these relations are (equations are the statements that must be satisfied):
+\begin{enumerate}
+  \item $L_1 = \{(x, y) | y = x\}$
+  \item $L_2 = \{(x, y) | y = -x\}$
+  \item $L_3 = \{(x, y) | y = 0\}$
+  \item $L_4 = \{(x, y) | x = 0\}$
+\end{enumerate}
+
+Items 1 and 2 above show a relation that exists in both $x$ and $y$.
+When all points following this relation (Item 1) are plotted, a line passing through the origin at $45\degg$ will be seen.
+When all points following the second relation (Item 2) are plotted, a line passing through the origin $-45\degg$ will be seen.
+Items 3 and 4 show relations that depend only on one of $x$ and $y$.
+Item 3 presents a horizontal line passing through the origin---also called the \emph{$x$-axis}.
+Item 4 presents a vertical line passing through the origin---also called the \emph{$y$-axis}.
+
+\paragraph{Intercepts}
+Intercepts are the values at which the line crosses an axis.
+The $x$ and $y$ intercepts---$a$ and $b$---of Items 1 and 2 above are $0$ and $0$, respectively.
+
+\paragraph{Slope}
+The slope of a line is a measure of ``steepness''.
+Its value is calculated as the \emph{first derivative} of the equation as a function or ``rise over run''.
+
+\paragraph{Forms of Equations of Lines}
+Equations of lines can be expressed in different forms such as the \emph{general form} and the \emph{standard forms}.
+
+\subparagraph{General Form}
+This form is easily distinguishable since \emph{one side of the equation is $0$}. 
+Examples are $x \pm y = 0$, $x = 0$, $y = 0$.
+
+\subparagraph{Standard Forms}
+There are many different standard forms of equations of lines.
+These forms show the different properties of the lines they define.
+Listed below are some of them and the properties they give.
+
+\begin{table}[h!]
+  \centering
+  \caption{Standard forms and properties of lines}
+  \begin{tabular}{c|c|c}
+    Slope-intercept form & $y = mx + b$ & Slope and $y$-intercept of the line \\
+    Point-slope form & $(y-y_1) = m(x-x_1)$ & Slope and a point $(x_1, y_1)$ on the line \\
+    Two point form & $(y-y_{1/2}) = \big(\frac{y_2-y_1}{x_2-x_1}\big)\big(x-x_{1/2}\big)$ & Two points on the line \\
+    Two-intercept form & $\frac{x}{a} + \frac{y}{b}=1$ & \emph{Non-zero} intercepts of the line
+  \end{tabular}
+\end{table}
+
+\subsubsection{Equations of Circles}
+
+\paragraph{Distance formula}
+This formula is based on the Pythagorean theorem and it is used to get distances between points.
+$$D = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$$
+
+As said in section \ref{figs}, a circle is a collection of points \emph{equidistant} to a fixed point called the \emph{center}.
+Using the distance formula, we can find a relation wherein the distance of points to a ``center'' is \emph{constant}---a circle.
+
+$$(x-h)^2 + (y-k)^2 = r^2$$
+
+Given above is the standard form of the equation of a circle.
+Like lines, a general form ($RHS = 0$) for the equation can also be expressed.
+
+\subsubsection{Relative Positions of a Circle and a Line}
+
+Lines can be drawn alongside a circle and relative positions can be determined.
+Two of the relative positions were already stated in section \ref{figs}---tangent and secant.
+In this section, we define a third relative position called the \textbf{external line}.
+As the name suggests, an external line is a line that does not intersect the circle.
+
+To determine the relative position of a line with respect to a circle, the following system should be solved.
+
+$$\begin{cases}
+  (x-h)^2 + (y-k)^2 &= r^2 \\
+  y - mx &= b
+\end{cases}$$
+
+Solving the system means finding points that satisfy \emph{both} equations.
+This then means that such points can be found on both the line and the circle.
+If there are \emph{two} solutions, then the line is a \emph{secant} to the circle.
+If there is \emph{only one} solution, then the line is \emph{tangent} to the circle.
+Lastly, if there are no solutions, then the line is an \emph{external line} to the circle.
+
+\subsection{Locus and Region}
+
+\subsubsection{Locus defined by an equality}
+
+A \textbf{locus} is a set of points that satisfies a given equality.
+Loci (relations) are visually represented in $\cartes$.
+As examples related to this section, a circle is a locus equdistant to a center, a line is a locus of constant variation.
+
+\subsubsection{Region defined by an equality}
+
+Loci, whether closed or not closed, divide $\cartes$ into two areas or \textbf{regions} of inequality.
+Regions above the locus satisfy a standard $\geq$ relation while regions below the locus satisfy a standard $\leq$ relation.
