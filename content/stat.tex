@@ -1,22 +1,119 @@
 \subsection{Number of possible outcomes}
+
 \paragraph{Events}
 Events can be broken down into sets of events either \emph{dependent} or \emph{independent} of each other.
+
 \subparagraph{Independent events}
 These are events wherein the outcome of an event does not rely on another.
 An example of such events are ``picking an ace" and ``picking a red card" from a standard deck.
+
 \subparagraph{Dependent events}
 These are events wherein the outcome of an event relies on the outcome of a first event.
 An example of such events are first ``picking a black card", and throwing it away then ``picking a `Queen"\!".
 
+\subparagraph{Mutually inclusive events}
+These are events that happen simultaneously.
+Events should be \emph{necessary} consequences of a prior set of events.
+Examples of events are ``getting a $6$ at the top face of a die'' and ``getting a $1$ at the bottom face of a die''.
+
+\subparagraph{Mutually exclusive events}
+These are events that cannot happen simultaneously.
+Events should \emph{not} be \emph{necessary} consequences of a prior set of events.
+Examples of events are ``being a \textit{Slytherin}'' and ``being a \textit{Ravenclaw}''.
+
 \subsubsection{Principles of counting}
 Cardinality refers to the number of elements in a set.
-Such sets---also called the \emph{outcome space} can be the sets of possible outcomes for independent events.
+Such sets---also called the \emph{outcome space}---can be the sets of possible outcomes for independent events or mutually exclusive events.
+In order to determine \textbf{probabilities} of related events occuring, there are certain rules we must follow.
+
+\paragraph{Addition rule}
+This rule states that the cardinality of the \textbf{union} of the outcome space of \emph{mutually exclusive} events occuring is the sum of the cardinalities of both sets.
+This is logical since the events cannot happen at the same time.
+An example would be finding the number of students from either \textit{Slytherin} and \textit{Ravenclaw}.
+By the addition rule, the total number of students in either house is the sum of the number of students in each house.
+In cases where the events are not mutually exclusive, a \textbf{Venn diagram} will be useful.
+
+\paragraph{Multiplication rule}
+This rule states that the cardinality of the \textbf{intersection} of the outcome space of combinations of \emph{independent events} is the product of the cardinalities of the outcome spaces of each event.
+An example would be finding the number of cards in a standard deck.
+By the multiplication rule, the total number of possible cards in a standard deck is the product of the number of suits and the number of ranks.
 
 \subsubsection{Permutations and combinations}
+There are some cases wherein the numbers of possible arrangements and combinations of a set of elements is desired.
+There may be cases with \textit{indistinguishable} objects.
+Cases described in this section involve mostly distinguishable objects.
+Formulae for cases involving indistinguishable objects may be derived.
+
+\paragraph{Permutations}
+Permutations are arrangements of elements in a set.
+Here, the order of elements is concerned.
+Hence $\{1, 2, 3\}$ is different from $\{3, 1, 2\}$.
+It should be noted that choosing numbers sequentially in a set are independent events.
+
+In a set of $N$ distinguishable objects, there should be $N$ ways of choosing a first element, $N-1$ ways of choosing a second element, and so on until a last element.
+By the multiplication rule, the total number of possible arrangements (\textbf{permutations}) is:
+
+$$\prod\limits_{n=1}{N}n = n!$$
 
 \subsection{Probability and its fundamental properties}
 
+\paragraph{Probabilities}
+In some cases we are concerned of the chances of events occuring.
+These are called \textbf{probabilities}.
+A probability is a ratio of the cardinalities of a space where a set of conditions are satisfied and the outcome space of an event.
+Another definition of probability would be then that it is the ratio of the cardinality of the set difference of the set of outcomes that \emph{satisfy} conditions and the outcome space and the cardinality of the outcome space.
+
+Since the outcome space contains \emph{all possible events}, then there must be \emph{no} outcome that satisfies none of the possible conditions.
+Consider the \textit{Sorting Ceremony}, there are only \emph{four} possible outcomes (\textit{Ravenclaw, Gryffindor, Slytherin,} and \textit{Hufflepuff}).
+Since the house \textit{Rowlingger} does not exist---it is not part of the outcome space---the probability of it occuring is $0$.
+This is a ``worst case'' for a probability--\textbf{the lowest value of a probability is $0$}.
+
+There may be some conditions that are satisfied for a \emph{subset} of the outcome space and are false for the complement.
+Consider, again, the \textit{Sorting Ceremony}, the probability of being sorted to the House \textit{Hufflepuff}, is non-zero, since it is in the outcome space, but it is less than, or approaching, $1$.
+Depending on the amount of \textbf{bias} in assignment of the \textit{Sorting Hat}, it is possible that the probability of being sorted to House \textit{Gryffindor} may be approaching $1$ but not equal to since there are other possible outcomes---\textbf{probabilities can range anywhere between $0$ and $1$}.
+
+In some cases, there is only \emph{one outcome} for an event.
+Consider, again, the \textit{Sorting Ceremony} where the \textit{Sorting Hat} is defective and is only able to classify everything into \textit{Ravenclaw}, the probability of being sorted into the House is $1$ since it is the only outcome possible.
+This is another ``worst case'' for a probability---\textbf{the highest value for a probability} is $1$.
+
 \subsection{Independent trials and probability}
+
+\paragraph{Trials}
+Empirical evidence of the outcomes of events involve \textbf{trials}.
+A trial is a \textbf{\emph{controlled} event}.
+This means that multiple trials are held in the same enviromnent.
+Trials should be designed such that they \emph{cannot affect} the outcome of another trial---they should be \emph{independent}.
+The independence of trials is the basis behind most statistical measures.
+It makes numerical modeling easier to process and understand.
+
+Numerical modeling of empirical events (statistical modeling) relies heavily on probabilities.
+Probabilities provide a means to measure, in general, the likelihood of an outcome to an event.
+There are two ways of prediction \textit{a priori}, \emph{prior} to trials, and \textit{a posteriori}, \emph{after} trials.
+
+\paragraph{\textit{A priori}}
+This approach of determining probabilities relies on \emph{assumptions}.
+A usual assumption made using this approach is that bias is absent---all outcomes are equally probable.
+An example would be tossing a \emph{fair}, two-sided coin, with \emph{distinguishable} sides.
+The probability of a toss resulting to a ``heads'' would be the same as the probability of the \emph{same} toss resulting to a ``tails''.
+Since the elements of the outcome space have an equal chance of happening the probability is $1/2$.
+From this probability, other related probabilities can be determined such as the probability of getting three consecutive ``heads''.
+
+Since trials are also events, it would be possible to determine the probability of outcomes satisfying conditions among combinations of independent trials using the \emph{multiplication rule}.
+
+Mathematically, let $A$ be the outcome of a first event, and $B$ be the outcome of a second event, and given that the events are \emph{independent}, the probability of both happening is:
+
+$$P(A \cap B) = P(A) \cdot P(B)$$
 
 \subsection{Conditional probability}
 
+The concept of conditional probability is based on \emph{partial dependence} of events.
+Events that are considered in this subsection are \emph{not necessarily independent} of each other.
+While the principles observed are similar to those with independent events, analysis would be significantly different.
+These cases happen most of the time in real life examples.
+
+In some conditions, the probabilities of outcomes may differ, this suggests \textbf{dependence}.
+To handle this, the probability of outcomes $A$ and $B$ of two \emph{dependent events} happening is:
+
+$$P(A \cap B) = P(B|A) \cdot P(A)$$
+
+where $P(B|A)$ is the probability of $B$ happening given that $A$ happened.
