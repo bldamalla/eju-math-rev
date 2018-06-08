@@ -248,4 +248,4 @@ TSWLatexianTemp*
 *.spl
 
 # ignore image assets
-assets/images/*
+# assets/images/*
