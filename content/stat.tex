@@ -53,7 +53,7 @@ It should be noted that choosing numbers sequentially in a set are independent e
 In a set of $N$ distinguishable objects, there should be $N$ ways of choosing a first element, $N-1$ ways of choosing a second element, and so on until a last element.
 By the multiplication rule, the total number of possible arrangements (\textbf{permutations}) is:
 
-$$\prod\limits_{n=1}{N}n = n!$$
+$$\prod\limits_{n=1}^{N}n = n!$$
 
 \subsection{Probability and its fundamental properties}
 
@@ -103,6 +103,12 @@ Since trials are also events, it would be possible to determine the probability 
 Mathematically, let $A$ be the outcome of a first event, and $B$ be the outcome of a second event, and given that the events are \emph{independent}, the probability of both happening is:
 
 $$P(A \cap B) = P(A) \cdot P(B)$$
+
+\paragraph{\textit{A posteriori}}
+This approach of determining probabilities relies on \emph{results}.
+The probability, then, of an event is defined as the ratio of the number of successes to the total number of trials:
+
+$$P(A) = N(A) / N$$
 
 \subsection{Conditional probability}
 

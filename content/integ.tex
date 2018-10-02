@@ -1,5 +1,8 @@
 \paragraph{Euclidean division}
-In the case of natural numbers, a natural number can be expressed as a product of any two natural numbers and a remainder.
+An integer $N$ can be expressed as a sum of the product of any two integers and an integral remainder:
+
+$$N = P(Q)+R$$
+
 Examples are shown below:
 \begin{align*}
     35 &= 5(7) + 0 \\
@@ -43,7 +46,7 @@ Reduction algorithms can be applied to a list of numbers based on the algorithm.
 The algorithm assumes that the GCF of two numbers is the same as the GCF of one of the numbers and the difference of the numbers.
 Formally, with $x > y$:
 \[
-GCD(x, y) = GCD(x-y, y) = GCD(x-y, x)
+GCD(x, y) = GCD(x\%y, y) = GCD(x\%y, x)
 \]
 
 \subsection{Applications of the properties of integers}
