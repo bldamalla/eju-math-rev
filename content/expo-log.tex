@@ -1,0 +1,104 @@
+\subsection{Exponential functions}
+
+Exponential functions are mappings that involve exponentiations of expressions with independent variables with respect to constants.
+Such expressions are \emph{transcendental} in nature; hence, they do not follow simple algebraic relations and operations as will be pointed out later.
+These functions are injective, \emph{the domain and follow a one-to-one relation}
+Examples of these expressions are the following:
+\begin{enumerate}
+  \item $f(x) = 2^x$
+  \item $g(k) = 4^{k+2}$
+  \item $h(x) = e^{3x^2+2}$
+\end{enumerate}
+
+\subsubsection{Expansion of exponents}
+
+Exponentiation can be defined as the recursive multiplication of \emph{base} expressions due to multiplicities of an \emph{exponent}.
+The expression $x^3$ is equivalent to $x\cdot x\cdot x$. Here, $x$ is multiplied thrice to itself.
+
+Multiple expressions can be made from these properties of exponents.
+The properties can be described as the laws of exponents as shown by the table below.
+
+\begin{table}[h!]
+  \centering
+  \caption{Laws of Exponents}
+
+  \begin{tabular}{c|c}
+    $x^0 = 1; \forall\ x \neq 0$ & $x^1 = x$ \\
+    $x^a \cdot x^b = x^{a+b}$ & $\frac{x^a}{x^b} = x^{a-b}$ \\
+    $x^-a = \frac{1}{x^a}$ & $x^{\frac{1}{a}} = \sqrt[a]{x}$ \\
+    $(x^a)^b = x^{ab}$ & $a^x \cdot b^x = (ab)^x$
+  \end{tabular}
+\end{table}
+
+\subsubsection{Exponential functions and their graphs}
+
+\paragraph{Injectivity} As noted above, the exponential functions are \emph{injective}.
+This means that there will only be \emph{one} value in the range for every value in the domain.
+Generally, singular exponential functions are injective.
+Combinations or superpositions (from addition or subraction) can be \emph{unpredictable}, but their behaviors can be shown by calculating the derivatives of the said functions.
+
+\paragraph{Span} Singular exponential expressions span half of $\cartes$.
+They have horizontal asymptotes, and depending on the sign of the coefficient is the direction of the graph.
+The horizontal asymptotes can be calculated by finding the limits at infinity ($-\inf$ or $\inf$).
+This means that the range of simple exponential functions are restricted to half of $\real$, while the domain spans $\real$ in general.
+
+\paragraph{Concavity} It can be noted that the derivatives of exponential functions are also exponential.
+The term exponential \emph{growth} refers to the nature of the rate of change (derivative) is very similar to the expression of the represented function:
+$$\frac{d}{dx} e^x = e^x$$
+$$\frac{d}{dx} -e^{x} = -e^x$$
+If the coefficient is positive, as in $3^x = f(x)$, the graph is convex (concave up) and increasing towards $-\inf$ (shown by calculating the limits at$\inf$).
+If the coefficient is negative, as in $-5^{x+2} = g(x)$, the graph is concave (concave down) and decreasing towards $-\inf$.
+
+\subsection{Logarithmic functions}
+
+Logarithmic functions are mappings that involve logarithmic expressions, which are defined as inverses of exponential expressions.
+The logarithm can be defined as:
+$$\log_a b = c$$
+where
+$$a^c = b$$
+Examples of logarithmic functions are:
+\begin{enumerate}
+  \item $f(x) = \log_3 x$
+  \item $g(k) = \log_e (x+2) = \ln (x+2)$
+  \item $h(q) = \log_10 x = log x$
+\end{enumerate}
+
+Similar to exponential functions, they are also transcendental and follow the same rules as their inverses.
+The laws of exponents can be translated to the logarithmic counterparts as follows
+
+\subsubsection{Properties of logarithms}
+
+\begin{table}
+  \centering
+  \caption{Laws on Logarithms}
+
+  \begin{tabular}{c|c}
+    $\log_a 1 = 0 \forall\ a \neq 0$ & $\log_a a = 1$ \\
+    $\log_a x + \log_a y = \log_a (xy)$ & $\log_a x - log_a y = log_a (\frac{x}{y})$ \\
+    $-\log_a x = \log_a \frac{1}{x}$ & $c\log_a b = \log_a (b^c)$ \\
+    $\frac{log_a x}{log_a y} = \log_y x$
+  \end{tabular}
+
+\end{table}
+
+\subsubsection{Logarithmic functions and their graphs}
+
+Logarithmic functions are, generally, the inverses of exponential functions.
+This means that the graphs of simple logarithmic functions are \emph{reflections} of their respective inverses with respect to $f(x) = x$.
+
+\paragraph{Injectivity} Simple logarithmic functions are also injective.
+However, their superpositions are not linear (unpredictable).
+Derivatives are useful tools for the general description for function behavior.
+
+\paragraph{Span} They also span half of $\cartes$.
+Since they are diagonal reflections, the horizontal asymptotes of corresponding exponential functions will be numerically be equivalent to the vertical asymptotes.
+Similarly, the domain is restricted to half of $\real$, while the range spans $\real$.
+
+\paragraph{Concavity}
+The second derivative of a logarithmic expression is:
+
+$$\frac{d^2}{dx^2} \log_a (x) = -\frac{1}{x^2 \cdot \ln{a}}$$
+
+which is always \emph{negative} $\forall\ x > 1$ but \emph{positive} $\forall 0 < x < 1$.
+
+Hence, the graph is \emph{concave} $\forall\ x > 1$ ang \emph{convex} $\forall\ 0 < x < 1$.
