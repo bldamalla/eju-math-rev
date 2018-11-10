@@ -1,0 +1,146 @@
+\subsection{Sequences and their sums}
+
+\paragraph{Sequences}
+A sequence is a properly defined collection of symbols or numbers.
+Real sequences $\{a_n\}$ where $a_i \in \real$ can be defined in terms of the progression of the terms in them.
+Examples of real sequences are:
+\begin{enumerate}
+  \item $\{ a_n\} = \{ 23, 24, 25, 26, 27, 28\}; n = 6$
+  \item $\{ g_n\} = \{ -2, 4, -8, 16, -32, 64\}; n = 6$
+  \item $\{ t_n\} = \{ 1, 1, 2, 3, 5, 8, 13, 21, 34}; n = 9$
+  \item $\{ f_n\} = \{ 1, 3, 6, 10, 15, 21, 28\}; n = 7$
+\end{enumerate}
+
+\paragraph{Series}
+A series is defined as the sum of terms of a given sequence.
+
+\subparagraph{Convergence and divergence of infinite series}
+An infinite series is said to be \emph{converging} if the limit to infinity of a sum can be defined.
+Otherwise, it is said to be divergent.
+
+\subsubsection{Arithemetic progressions and geometric progressions}
+
+\paragraph{Arithmetic sequences} 
+Arithmetic sequences are sequences of real numbers wherein $\exists\ d \in \real a_n = a_{n-1} + d$.
+This means that consecutive elements of the sequence are separated by a \emph{common difference} $d$.
+The first example given above is an arithmetic sequence with $d = 1$ and $n = 6$.
+Arithmetic sequences can only be [strictly] \emph{increasing} or \emph{decreasing} depending on the sign of $d$.
+If $d > 0$, the sequence is increasing, else if $d < 0$, the sequence is decreasing.
+
+\paragraph{Arithemetic series}
+Generally the series sums are expressed as the following:
+
+\[
+  S_a(n) = \dfrac{a_1 + a_n}{2}\cdot n = \dfrac{2a_1 + d(n-1)}{2}\cdot n
+\]
+
+where $n$ is the number of terms, $a_1$ is the first term, $a_n$ is the last term, and $d$ is the common difference.
+
+\subparagraph{Divergence of series}
+Generally, the series can be expressed in terms of the first term.
+Given the equation above, it can be seen that the sum linearly increases as the number of terms increases, \emph{the limit cannot be defined}; hence, all \emph{infinite arithmetic series are divergent}.
+
+\paragraph{Arithmetic mean}
+The arithmetic mean is the numerical \emph{average} of the elements of a sequence.
+It, $mean(\{ a_n\})$ can be expressed as:
+
+\[
+  mean(\{ a_n\}) = \dfrac{S_a(n)}{n} = \dfrac{a_1 + a_n}{2} = \dfrac{2a_1 + d(n-1)}{2}
+\]
+
+where the first part of the statement is the definition of the mean, the second and third parts came from the definition of the arithmetic series.
+From the above statements, it can be said that the arithmetic mean, more informally ``the midle term", of an arithmetic sequence is equal to the arithmetic mean of the first and last terms.
+
+\paragraph{Geometric sequences}
+Geometric sequences are sequences of real numbers wherein $\exists d \in \real g_n = r\cdot g_{n-1}$.
+This means that consecutive elements of the sequence are separated by a \emph{common ratio} $r$.
+The second example given above is an arithmetic sequence with $r = -2$ and $n = 6$.
+If $abs{r} > 1$, the absolute value of every succeeding $g_n$ is increasing, else if $abs{r} < 1$, the absolute value of every succeeding $g_n$ is decreasing.
+
+\paragraph{Finite geometric series}
+The finite geometric series can be expressed as follows:
+
+\[
+  S(n) = a_0 \cdot \dfrac{1-r^n}{1-r}  
+\]
+
+where $a_0$ is the first term of the series, $r$ is the common ratio, and $n$ is the number of terms.
+
+\paragraph{Infinite geometric series}
+The series sum can expressed as follows:
+
+\[
+  S_g(n) = a_0 \cdot \dfrac{1}{1-r} = \lim_{n\to \infty} a_0\cdot\dfrac{1-r^n}{1-r}
+\]
+
+where the variable definitions still hold.
+Take note that the limit can only be evaluated when $abs{r} < 1$ (\emph{convergent}).
+Otherwise, the limit cannot be evaluated, DNE, when $abs{r} > 1$ (\emph{divergent}).
+
+\paragraph{Geometric mean}
+The geometric mean of a sequence is defined as:
+
+\[
+  gmean(\{ g_n\}) = \sqrt[n]{S_g(n)}
+\]
+
+Similar with the arithmetic mean, the geometric mean, also informally ``the middle term'' can also be expressed as the geometric mean of the first and last terms, or any two terms of the same ``distance'' from the middle term.
+
+\subsubsection{Various sequences}
+There are also many ways to define sequences.
+Presented in this subsection are common sequences and series.
+
+\paragraph{Fibonacci sequence}
+One of the more popular sequences known is the Fibonacci sequence.
+It is a basic sequence defined recursively from the sum of two previous terms.
+The third example at the beginning of this section is an example of a Fibonacci sequence starting from $a_0 = 1, a_1 = 1$ and $n = 9$.
+
+\paragraph{Triangular number sequence}
+The triangular number sequence $\{ t_n\}$, is a sequence of numbers wherein each term $\{t_k\}, k \in \{ 1, 2, 3, \ldots, n\}$ is the sum of the arithmetic series from $1$ to $n$.
+The fourth example at the beginning of this section is an example of a triangular number sequence of length $7$.
+
+\paragraph{Telescoping series}
+A telescoping series is a series wherein the partial sums of the expression yield \emph{fewer} terms due to cancellation of \emph{equivalent} addends.
+An example of such a series is:
+
+\[
+  \sum_{n=1}^{N} \dfrac{1}{n^2+n} = 1 - \frac{1}{n}
+\]
+
+\subsection{Recurrence formulae and mathematical induction}
+Sequences can also be defined, like the Fibonacci sequence, recursively through \textbf{recursive formulae}.
+Recursion is defined as an operation in repetition with respect to previously calculated elements.
+
+\paragraph{Recurrence formulae}
+Recurrence formula are often useful when in need to define successive terms in a sequence without the need of a general expression.
+The recursive formula for the Fibonacci sequence is $f_n = f_{n-1} + f_{n-2}$.
+The recursive formula for an arithmetic sequence is $a_n = a_{n-1} + d$.
+The recursive formula for a geometric sequence is $g_n = r\cdot g_{n-1}$.
+The recursive formula for a triangular number series is $t_n = t_{n-1} + n$.
+Usually, simple sequences usually have simpler recursive formulae compared to their general counterparts.
+As a consequence, they are \emph{simpler} to evaluate \emph{in succession}.
+
+\paragraph{Principle of mathematical induction}
+The principle of mathematical induction is a method of proof that relies on assumptions on the recursive properties of expressions that can apply to all integers.
+In this paragraph, we will attempt to prove $\forall\ n \in \natl$ that $f(n) = n^3 - n$ is divisible by $3$ using mathematical induction.
+There are four basic steps in proving:
+
+\subparagraph{Proof on a trivial cases}
+Show that the statement works on easy cases.
+For $n=1$, $f(1) = 0 \equiv 0(\textrm{mod} 3)$, and $n=2$, $f(2) = 6 \equiv 0 (\textrm{mod} 3)$.
+This step ensures that there are cases wherein the statement holds.
+
+\subparagraph{Assumption on $k \in \natl$}
+Assume that the statement holds for some $n \in \natl$.
+For some $n = k$, $f(k) = k^3 - k \equiv 0(mod 3)$.
+Adding $3k^2 + 3k$ to both sides gives:
+
+\begin{align*}
+  k^3 + 3k^2 + 3k - k &\equiv 3k^2 + 3k (mod 3) \equiv 0 (mod 3) \\
+  k^3 + 3k^2 + 3k + 1 - k - 1 &\equiv 0(mod 3) \\
+  (k+1)^3 - (k+1) = f(k+1) &\equiv 0(mod 3)
+\end{align*}
+
+\subparagraph{Conclusion}
+Hence, we have shown that if the statement holds for $n = k \in \natl$, then it must hold for $n = k+1$.
+Since $\natl$ is closed under addition, the statement must hold $\forall\ n \in \natl$.
